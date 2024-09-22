@@ -9,4 +9,4 @@ RUN mv standalone Geyser-Standalone.jar
 ENV PORT=19132
 EXPOSE $PORT/udp
 
-CMD ["java", "-Xms512M", "-Xmx512M", "-jar", "Geyser-Standalone.jar", "--config", "/app/config/config.yml"]
+CMD ["java", "-Xms512M", "-Xmx512M", "-jar", "Geyser-Standalone.jar", "--config", "/docker/geyser/config.yml"]
